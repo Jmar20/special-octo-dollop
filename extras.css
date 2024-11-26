@@ -1,0 +1,77 @@
+/* Inicio */
+.hero {
+    background-image: url('src/fondo1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.hero-text {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* Historia */
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    clear: both;
+  }
+  .timeline-date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: #333;
+    z-index: 1;
+    margin-top: -1rem;
+  }
+  .timeline-content {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  .timeline-item:nth-child(odd) .timeline-content {
+    background-color: #f0f8ff;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    background-color: #e0ffe0;
+  }
+  .timeline-item:nth-child(odd)::before {
+    left: 50%;
+  }
+  .timeline-item:nth-child(even)::before {
+    left: 0;
+  }
+
+  .timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .timeline-date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: #333;
+    z-index: 1;
+    margin-top: -1rem;
+  }
